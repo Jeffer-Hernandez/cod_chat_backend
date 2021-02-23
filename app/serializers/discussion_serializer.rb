@@ -1,4 +1,5 @@
 class DiscussionSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :title
+  has_many :comments
 end
